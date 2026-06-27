@@ -231,6 +231,10 @@ h3 {
   margin: 0 auto 34px;
 }
 
+.section-heading.wide {
+  max-width: 980px;
+}
+
 .section-heading p:not(.section-kicker) {
   color: var(--muted);
   font-size: 18px;
@@ -251,7 +255,10 @@ h3 {
 
 .direction-card,
 .project-card,
-.advisor-list article {
+.advisor-list article,
+.lead-card,
+.highlight-card,
+.post-card {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -260,6 +267,10 @@ h3 {
 .direction-card {
   min-height: 410px;
   padding: 24px;
+}
+
+.direction-card:nth-child(1) {
+  border-top: 4px solid var(--red);
 }
 
 .direction-card:nth-child(2) {
@@ -285,7 +296,11 @@ h3 {
 .direction-card p,
 .direction-card li,
 .project-card span,
-.advisor-list p {
+.advisor-list p,
+.lead-card p,
+.highlight-card p,
+.news-list p,
+.post-card p {
   color: var(--muted);
 }
 
@@ -296,6 +311,24 @@ h3 {
 
 .direction-card li + li {
   margin-top: 10px;
+}
+
+.team-overview {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 16px;
+  margin: 0 0 24px;
+}
+
+.lead-card {
+  padding: 24px;
+  min-height: 220px;
+}
+
+.lead-card h3,
+.highlight-card h3,
+.post-card h3 {
+  margin-bottom: 10px;
 }
 
 .team-table-wrap {
@@ -361,6 +394,84 @@ tr:last-child td {
   padding: 22px;
 }
 
+.highlight-grid,
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.highlight-card,
+.post-card {
+  padding: 24px;
+  min-height: 250px;
+}
+
+.tag,
+.post-meta {
+  display: inline-flex;
+  margin-bottom: 22px;
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.recruiting-callout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  margin-top: 28px;
+  padding: 28px;
+  background: #eef3ed;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.recruiting-callout div {
+  max-width: 760px;
+}
+
+.recruiting-callout p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.news-list {
+  display: grid;
+  gap: 16px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.news-list li {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 24px;
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.news-list time {
+  color: var(--red);
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.news-list h3 {
+  margin-bottom: 6px;
+}
+
+.news-list p,
+.post-card p:last-child {
+  margin-bottom: 0;
+}
+
 .site-footer {
   display: flex;
   align-items: center;
@@ -387,7 +498,9 @@ tr:last-child td {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .project-grid {
+  .project-grid,
+  .highlight-grid,
+  .post-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
@@ -406,7 +519,8 @@ tr:last-child td {
   }
 
   .hero,
-  .two-column {
+  .two-column,
+  .team-overview {
     grid-template-columns: 1fr;
   }
 
@@ -418,8 +532,20 @@ tr:last-child td {
     min-height: 260px;
   }
 
-  .project-grid {
+  .project-grid,
+  .highlight-grid,
+  .post-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .recruiting-callout {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .news-list li {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 }
 
@@ -430,13 +556,18 @@ tr:last-child td {
 
   .direction-grid,
   .project-grid,
-  .advisor-list {
+  .advisor-list,
+  .highlight-grid,
+  .post-grid {
     grid-template-columns: 1fr;
   }
 
   .direction-card,
   .project-card,
-  .advisor-list article {
+  .advisor-list article,
+  .lead-card,
+  .highlight-card,
+  .post-card {
     min-height: auto;
   }
 
