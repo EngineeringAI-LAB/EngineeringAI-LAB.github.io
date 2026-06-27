@@ -4,6 +4,16 @@ This repository hosts the static GitHub Pages website for EngineeringAI Lab. The
 site does not require a build step; GitHub Pages can publish it directly from the
 repository root.
 
+## Site Structure
+
+- `index.html`: About page with Who We Are, We Work On, Highlights, News, and Latest Posts
+- `team.html`: leaders, current members, and alumni
+- `projects.html`: research directions and representative systems
+- `publications.html`: selected team papers and manuscripts
+- `advisors.html`: collaborating advisors and partners
+- `news.html`: lab updates
+- `styles.css`: shared styling for all pages
+
 ## Recommended Repository Name
 
 For an organization homepage, name the repository:
