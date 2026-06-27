@@ -1,35 +1,38 @@
 # EngineeringAI Lab GitHub Pages
 
-这是 EngineeringAI Lab 的 GitHub Pages 静态主页。页面无需构建工具，推送到组织主页仓库后即可由 GitHub Pages 发布。
+This repository hosts the static GitHub Pages website for EngineeringAI Lab. The
+site does not require a build step; GitHub Pages can publish it directly from the
+repository root.
 
-## 推荐仓库名
+## Recommended Repository Name
 
-组织主页仓库请命名为：
+For an organization homepage, name the repository:
 
 ```text
 EngineeringAI-LAB.github.io
 ```
 
-发布后的默认访问地址为：
+The default published URL will be:
 
 ```text
 https://engineeringai-lab.github.io/
 ```
 
-如果使用普通同名仓库，例如 `EngineeringAI-LAB`，页面地址会变成：
+If you use a regular project repository name, such as `EngineeringAI-LAB`, the
+published URL will include the repository path:
 
 ```text
 https://engineeringai-lab.github.io/EngineeringAI-LAB/
 ```
 
-## 发布步骤
+## Deployment
 
-1. 在 GitHub 组织 `EngineeringAI-LAB` 中新建仓库 `EngineeringAI-LAB.github.io`。
-2. 将本目录初始化为 git 仓库并推送到该远程仓库。
-3. 打开仓库的 `Settings -> Pages`，选择 `Deploy from a branch`，分支选择 `main`，目录选择 `/root`。
-4. 等待 GitHub Pages 完成部署。
+1. Create a repository named `EngineeringAI-LAB.github.io` under the `EngineeringAI-LAB` organization.
+2. Initialize this directory as a git repository and push it to that remote.
+3. Open `Settings -> Pages`, choose `Deploy from a branch`, select the `main` branch, and choose `/root`.
+4. Wait for GitHub Pages to finish deployment.
 
-可使用以下命令：
+Useful commands:
 
 ```bash
 git init -b main
@@ -39,7 +42,7 @@ git remote add origin git@github.com:EngineeringAI-LAB/EngineeringAI-LAB.github.
 git push -u origin main
 ```
 
-如果使用 HTTPS 远程地址：
+If you prefer an HTTPS remote:
 
 ```bash
 git remote add origin https://github.com/EngineeringAI-LAB/EngineeringAI-LAB.github.io.git
