@@ -697,6 +697,48 @@ tr:last-child td {
   color: #34443e;
 }
 
+.resource-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.resource-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 34px;
+  padding: 4px 12px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.76);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+  transition: transform 0.18s ease, border-color 0.18s ease,
+    background-color 0.18s ease;
+}
+
+.resource-link:hover,
+.resource-link:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(31, 111, 84, 0.36);
+  background: var(--surface);
+}
+
+.resource-link svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.resource-link span {
+  line-height: 1;
+}
+
 .publication-card {
   padding: 24px;
 }
