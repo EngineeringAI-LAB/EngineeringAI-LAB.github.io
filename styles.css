@@ -258,7 +258,9 @@ h3 {
 .advisor-list article,
 .lead-card,
 .highlight-card,
-.post-card {
+.post-card,
+.profile-card,
+.publication-card {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -327,8 +329,41 @@ h3 {
 
 .lead-card h3,
 .highlight-card h3,
-.post-card h3 {
+.post-card h3,
+.profile-card h3,
+.publication-card h3 {
   margin-bottom: 10px;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 980px;
+  margin: 0 auto 24px;
+}
+
+.profile-card {
+  min-height: 190px;
+  padding: 24px;
+}
+
+.profile-card.featured {
+  border-top: 4px solid var(--red);
+}
+
+.profile-card p,
+.publication-card p {
+  color: var(--muted);
+}
+
+.section-table {
+  max-width: 980px;
+  margin: 0 auto 24px;
+}
+
+.alumni-grid {
+  grid-template-columns: 1fr;
 }
 
 .team-table-wrap {
@@ -472,6 +507,21 @@ tr:last-child td {
   margin-bottom: 0;
 }
 
+.publication-list {
+  display: grid;
+  gap: 16px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.publication-card {
+  padding: 24px;
+}
+
+.featured-publication {
+  border-top: 4px solid var(--red);
+}
+
 .site-footer {
   display: flex;
   align-items: center;
@@ -520,7 +570,8 @@ tr:last-child td {
 
   .hero,
   .two-column,
-  .team-overview {
+  .team-overview,
+  .profile-grid {
     grid-template-columns: 1fr;
   }
 
@@ -567,7 +618,8 @@ tr:last-child td {
   .advisor-list article,
   .lead-card,
   .highlight-card,
-  .post-card {
+  .post-card,
+  .profile-card {
     min-height: auto;
   }
 
