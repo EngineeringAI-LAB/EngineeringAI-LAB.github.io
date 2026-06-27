@@ -331,6 +331,14 @@ h3 {
   border-top: 4px solid var(--cyan);
 }
 
+.index {
+  display: block;
+  margin-bottom: 28px;
+  color: var(--red);
+  font-size: 14px;
+  font-weight: 900;
+}
+
 .direction-card p,
 .direction-card li,
 .project-card span,
