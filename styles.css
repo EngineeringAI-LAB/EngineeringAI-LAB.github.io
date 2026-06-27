@@ -123,7 +123,9 @@ img {
 }
 
 .section-kicker {
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: none;
 }
 
 h1,
@@ -135,7 +137,7 @@ p {
 
 h1 {
   margin-bottom: 22px;
-  font-size: 32px;
+  font-size: 36px;
   line-height: 0.95;
   letter-spacing: 0;
 }
@@ -222,7 +224,8 @@ h3 {
 .page-hero h1 {
   max-width: 940px;
   margin-bottom: 22px;
-  font-size: clamp(42px, 7vw, 86px);
+  font-size: 36px;
+  line-height: 1.05;
 }
 
 .page-hero p:not(.eyebrow) {
@@ -326,14 +329,6 @@ h3 {
 
 .direction-card:nth-child(4) {
   border-top: 4px solid var(--cyan);
-}
-
-.index {
-  display: block;
-  margin-bottom: 28px;
-  color: var(--red);
-  font-size: 14px;
-  font-weight: 900;
 }
 
 .direction-card p,
