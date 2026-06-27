@@ -405,6 +405,14 @@ h3 {
   color: var(--muted);
 }
 
+.profile-link {
+  color: var(--green);
+  font-weight: 850;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+
 .section-table {
   max-width: var(--container);
   margin: 0 auto 24px;
