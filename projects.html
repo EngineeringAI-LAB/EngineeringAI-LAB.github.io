@@ -28,65 +28,45 @@
         <p class="eyebrow">Projects</p>
         <h1>Systems for open 3D world models</h1>
         <p>
-          Our projects connect 3D asset representation, spatial world generation,
-          interactive motion, and LLM/RL decision intelligence.
+          The four project groups below correspond to the lab's shared research
+          directions. Each group expands into concrete papers and code status.
         </p>
       </section>
 
       <section class="section section-band">
         <div class="section-inner">
-          <div class="direction-grid">
-            <article class="direction-card">
-              <span class="index">01</span>
-              <h3>Foundation Representation and Manipulation</h3>
+          <div class="section-heading wide">
+            <p class="section-kicker">Selected Projects</p>
+            <h2>Foundation Representation and Manipulation</h2>
+            <p>
+              Compact and controllable 3D asset representations for reconstruction,
+              editing, decomposition, and state prediction.
+            </p>
+          </div>
+          <div class="project-list">
+            <article class="project-entry-card">
+              <span class="tag">3D Foundation</span>
+              <h3>P2Voxel: Pyramid Pivot Voxelization for 3D Mesh Tokenization</h3>
               <p>
-                Compact and controllable 3D asset representations for reconstruction,
-                editing, decomposition, and state prediction.
+                A compact 3D mesh tokenization project for efficient VAE reconstruction
+                and foundation representation learning.
               </p>
-              <ul>
-                <li>PyramidVoxel and PyramidVAE + DiT</li>
-                <li>Part-aware 3D structure decomposition</li>
-                <li>Topology-aware asset manipulation</li>
-              </ul>
+              <div class="project-links">
+                <span>Paper: manuscript, 2026</span>
+                <span>Code: to be released</span>
+              </div>
             </article>
-            <article class="direction-card">
-              <span class="index">02</span>
-              <h3>Spatial Understanding and Synthesis</h3>
+            <article class="project-entry-card">
+              <span class="tag">3D Structure</span>
+              <h3>Hi-TOPS: Hierarchical Topology-aware Scoring Prior for 3D Part Decomposition</h3>
               <p>
-                Agentic generation pipelines and engine-grounded tools for coherent 3D
-                scenes, simulation data, and spatial evaluation.
+                A topology-aware prior for decomposing 3D meshes into meaningful parts
+                for structure-aware manipulation.
               </p>
-              <ul>
-                <li>StoryBlender for editable 3D story worlds</li>
-                <li>Camera and viewpoint modeling</li>
-                <li>Scene understanding tools and benchmarks</li>
-              </ul>
-            </article>
-            <article class="direction-card">
-              <span class="index">03</span>
-              <h3>Interaction Dynamics and Motion</h3>
-              <p>
-                Expressive avatars, human-scene interaction, and multi-person motion
-                generation for dynamic digital worlds.
-              </p>
-              <ul>
-                <li>XTalker and 3DXTalker</li>
-                <li>Human-human interaction generation</li>
-                <li>Viseme metrics and avatar evaluation</li>
-              </ul>
-            </article>
-            <article class="direction-card">
-              <span class="index">04</span>
-              <h3>Decision Intelligence and Reasoning</h3>
-              <p>
-                LLM-based reasoning, language-guided planning, reinforcement learning,
-                and decision systems for agents in 3D worlds.
-              </p>
-              <ul>
-                <li>LLM-based world reasoning</li>
-                <li>Language-supervised decision learning</li>
-                <li>RL-driven 3D interaction</li>
-              </ul>
+              <div class="project-links">
+                <span>Paper: manuscript, 2026</span>
+                <span>Code: to be released</span>
+              </div>
             </article>
           </div>
         </div>
@@ -95,33 +75,135 @@
       <section class="section">
         <div class="section-heading wide">
           <p class="section-kicker">Selected Projects</p>
-          <h2>Research and engineering outputs</h2>
+          <h2>Spatial Understanding and Synthesis</h2>
+          <p>
+            Agentic pipelines and engine-grounded tools for coherent 3D scenes,
+            simulation data, and spatial evaluation.
+          </p>
         </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <p>Spatial Understanding</p>
-            <h3>StoryBlender</h3>
-            <span>Editable multi-shot 3D story worlds with spatial-temporal consistency.</span>
+        <div class="project-list">
+          <article class="project-entry-card featured-publication">
+            <span class="tag">ECCV | Team Milestone</span>
+            <h3>StoryBlender: Inter-Shot Consistent and Editable 3D Storyboard</h3>
+            <p>
+              EngineeringAI Lab's first team-led ECCV paper, building editable
+              multi-shot 3D story worlds with spatial-temporal consistency.
+            </p>
+            <div class="project-links">
+              <a href="https://arxiv.org/abs/2604.03315" target="_blank" rel="noreferrer">Paper: arXiv</a>
+              <span>Code: to be released</span>
+            </div>
           </article>
-          <article class="project-card">
-            <p>Human Generation</p>
-            <h3>XTalker</h3>
-            <span>Controllable talking portrait animation with natural facial driving.</span>
+          <article class="project-entry-card">
+            <span class="tag">Scene Attention</span>
+            <h3>Look-Before-Move: Narrative-Grounded World Visual Attention</h3>
+            <p>
+              A world visual attention framework for viewpoint selection and camera
+              trajectories in dynamic 3D story worlds.
+            </p>
+            <div class="project-links">
+              <span>Paper: manuscript, 2026</span>
+              <span>Code: to be released</span>
+            </div>
           </article>
-          <article class="project-card">
-            <p>Human Generation</p>
-            <h3>3DXTalker</h3>
-            <span>Expressive 3D talking avatars with identity, lip sync, and spatial dynamics.</span>
+        </div>
+      </section>
+
+      <section class="section section-band">
+        <div class="section-inner">
+          <div class="section-heading wide">
+            <p class="section-kicker">Selected Projects</p>
+            <h2>Interaction Dynamics and Motion</h2>
+            <p>
+              Expressive avatars, human-scene interaction, and multi-person motion
+              generation for dynamic digital worlds.
+            </p>
+          </div>
+          <div class="project-list">
+            <article class="project-entry-card">
+              <span class="tag">Talking Avatar</span>
+              <h3>XTalker: Turn, Smile, and Speak in Controllable Talking Portrait Animation</h3>
+              <p>
+                A controllable portrait animation framework for identity-preserving,
+                expressive, and synchronized talking faces.
+              </p>
+              <div class="project-links">
+                <span>Paper: manuscript, 2026</span>
+                <span>Code: to be released</span>
+              </div>
+            </article>
+            <article class="project-entry-card">
+              <span class="tag">3D Avatar</span>
+              <h3>3DXTalker: Expressive 3D Talking Avatars</h3>
+              <p>
+                A 3D talking-avatar system unifying identity, lip sync, emotion, and
+                spatial dynamics.
+              </p>
+              <div class="project-links">
+                <a href="https://arxiv.org/abs/2602.10516" target="_blank" rel="noreferrer">Paper: arXiv</a>
+                <span>Code: to be released</span>
+              </div>
+            </article>
+            <article class="project-entry-card">
+              <span class="tag">Motion</span>
+              <h3>Social Structure Matters in 3D Human-Human Interaction Generation</h3>
+              <p>
+                A multi-person motion generation project focused on social coherence,
+                interpersonal relations, and plausible dynamic interaction.
+              </p>
+              <div class="project-links">
+                <span>Paper: manuscript, 2026</span>
+                <span>Code: to be released</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading wide">
+          <p class="section-kicker">Selected Projects</p>
+          <h2>Decision Intelligence and Reasoning</h2>
+          <p>
+            LLM-based reasoning, language-guided planning, reinforcement learning, and
+            decision systems for agents in 3D worlds.
+          </p>
+        </div>
+        <div class="project-list">
+          <article class="project-entry-card">
+            <span class="tag">Decision Learning</span>
+            <h3>Scalable In-Context Q-Learning</h3>
+            <p>
+              A scalable in-context decision learning framework for adapting policies
+              from task context.
+            </p>
+            <div class="project-links">
+              <span>Paper: ICLR 2026</span>
+              <span>Code: to be released</span>
+            </div>
           </article>
-          <article class="project-card">
-            <p>3D Foundation</p>
-            <h3>PyramidVoxel</h3>
-            <span>A foundation generative model for efficient 3D content generation.</span>
+          <article class="project-entry-card">
+            <span class="tag">Decision Agent</span>
+            <h3>Text-to-Decision Agent</h3>
+            <p>
+              Offline meta-reinforcement learning from natural language supervision
+              for decision-making agents.
+            </p>
+            <div class="project-links">
+              <span>Paper: NeurIPS 2025</span>
+              <span>Code: to be released</span>
+            </div>
           </article>
-          <article class="project-card">
-            <p>3D Foundation</p>
-            <h3>TOPS</h3>
-            <span>Structure-aware semantic part decomposition for 3D objects.</span>
+          <article class="project-entry-card">
+            <span class="tag">Reasoning</span>
+            <h3>Escaping Confidence Trap</h3>
+            <p>
+              Evolutionary decoding for mathematical reasoning in diffusion LLMs.
+            </p>
+            <div class="project-links">
+              <span>Paper: manuscript, 2026</span>
+              <span>Code: to be released</span>
+            </div>
           </article>
         </div>
       </section>
