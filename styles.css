@@ -251,13 +251,17 @@ h3 {
 
 .two-column {
   display: grid;
-  grid-template-columns: minmax(220px, 0.85fr) minmax(0, 1.15fr);
+  grid-template-columns: minmax(220px, 1fr) minmax(0, 2fr);
   gap: clamp(28px, 5vw, 72px);
 }
 
 .copy-block {
   color: #34443e;
   font-size: 18px;
+}
+
+.who-title {
+  font-size: clamp(28px, 4vw, 42px);
 }
 
 .copy-block p:last-child {
@@ -554,10 +558,34 @@ tr:last-child td {
   margin: 0 auto;
 }
 
+.highlight-list {
+  display: grid;
+  gap: 16px;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
 .highlight-card,
 .post-card {
   padding: 24px;
   min-height: 250px;
+}
+
+.highlight-wide {
+  display: grid;
+  grid-template-columns: 160px minmax(220px, 0.42fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 22px;
+  min-height: 0;
+}
+
+.highlight-wide .tag {
+  margin-bottom: 0;
+}
+
+.highlight-wide h3,
+.highlight-wide p {
+  margin-bottom: 0;
 }
 
 .tag,
@@ -574,7 +602,8 @@ tr:last-child td {
   align-items: center;
   justify-content: space-between;
   gap: 28px;
-  margin-top: 28px;
+  max-width: var(--container);
+  margin: 28px auto 0;
   padding: 28px;
   background: #eef3ed;
   border: 1px solid var(--line);
@@ -588,6 +617,14 @@ tr:last-child td {
 .recruiting-callout p:last-child {
   margin-bottom: 0;
   color: var(--muted);
+}
+
+.emphasis-link {
+  color: var(--red);
+  font-weight: 850;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
 }
 
 .news-list {
@@ -817,6 +854,11 @@ tr:last-child td {
   .recruiting-callout {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .highlight-wide {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .news-list li {
